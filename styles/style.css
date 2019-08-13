@@ -1,0 +1,763 @@
+/*general part*/
+html {
+	height: 100%;
+}
+ body {
+    font-family: Bahnschrift, Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    background-image: url("../styles/images/05.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+		width: 100%;
+		height: 100%;
+  }
+
+  header{
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-image: url("../styles/images/background.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+  }
+
+  header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  article{
+    margin: 0;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+
+  footer{
+    text-align: center;
+    background: #855e42;
+    color: white;
+    padding: 1%;
+	margin-bottom: 0;
+}
+
+  footer p{
+    margin: 0;
+  }
+
+  footer p a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Heavy', Arial, sans-serif;
+    font-size: 120%;
+    font-style: italic;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /*Style the navigation bar on every page*/
+  nav {
+    text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
+  nav ul {
+    font-family: Century, 'Times New Roman', serif;
+    font-weight: bold;
+    list-style-type: none;
+    background-color: #1C2833;
+    padding: 0 0 0 0;
+    border-top: solid;
+    border-color: #434343;
+    border-width: 5px;
+    background: #101010;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    padding: 0 15px 0 15px;
+  }
+
+  nav ul li a {
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    color: white;
+  }
+  nav ul li a:hover {
+    background-color: white;
+    color: #1C2833;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  fieldset{
+    color: white;
+    background-image: url("../styles/images/back_enqui.jpg");
+    background-repeat: repeat;
+    border: 2px solid black;
+  }
+
+  legend {
+    font-size: 25px;
+    background-image: url("../styles/images/back_enqui.jpg");
+    background-repeat: repeat;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+  }
+
+  label {
+    font-family: Arial, sans-serif;
+  }
+
+  input{
+    padding: 5px 0 5px 0;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+  }
+
+  input[type=text] {
+    width: 100%;
+    float: none;
+  }
+
+  input[type=email] {
+    width: 100%;
+  }
+
+  input[type=tel] {
+    width: 100%;
+  }
+
+  input[type=submit], input[type=reset] {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: #aa0000;
+    padding: 10px 20px 10px 20px;
+    border-radius: 2px;
+    border: none;
+  }
+
+  .image_source{
+    font-size: 75%;
+  }
+                                            /*Adjust image source link*/
+  .image_source a{
+    font-style: italic;
+  }
+
+
+/*enquire.php*/
+  input[class=ticket_quantity]{
+    width: auto;
+    float: right;
+    clear: both;
+    border: 2px solid white;
+    text-align: center;
+  }
+
+  #total_label{
+    font-size: 150%;
+    font-weight: bold;
+  }
+
+  #total {
+    float: right;
+  }
+
+/*index.html*/
+  #index_header{
+    background-image: url("../styles/images/index_banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 32% 0 32% 0;                                    /*Adjust the header of index page*/
+    margin: 0;
+    position: relative;
+  }
+
+  #index_article{
+    margin: 0;
+    color: white;
+  }
+
+  /*Style the content in each picture*/
+  #intro_section_0{
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    background-image: url("../styles/images/back0.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 25% 0 25% 0;
+    position: relative;
+  }
+
+  #intro_section_0 h2 {
+    font-size: 400%;
+  }
+
+  #intro_section_0 p {
+    text-align: justify;
+    font-size: 200%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    line-height: 200%;
+  }
+
+  #intro_section_1{
+    margin: 0;
+    background-image: url("../styles/images/back1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 25% 0 25% 0;
+    vertical-align: middle;
+    position: relative;
+  }
+
+  #intro_section_2 {
+    text-align: right;
+    margin-top: 0;
+    background-image: url("../styles/images/back2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 25% 0 25% 0;
+    vertical-align: middle;
+    position: relative;
+  }
+
+  #intro_section_3{
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    background-image: url("../styles/images/back3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 28% 0 28% 0;
+    position: relative;
+
+  }
+
+  #intro_section_3 h2 {
+    font-size: 400%;
+  }
+
+  #intro_section_3 p {
+    text-align: justify;
+    font-size: 200%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    line-height: 200%;
+  }
+
+  .index_nav_bar{
+    position: fixed;
+    top: 0;                       /*navigation bar in index.html*/
+    z-index: 1;
+    width: 100%;
+  }
+
+  .index_image_source{
+    position: absolute;            /*Style the image source link in INDEX page*/
+    left: 85%;
+    bottom: 5%;
+    }
+
+    .left_h1 {
+      margin-left: 2%;
+      font-size: 400%;             /*Style texts in INDEX page*/
+    }
+
+    .left_p {
+      text-align: justify;
+      font-size: 200%;
+      margin-left: 2%;
+      margin-right: 50%;
+    }
+
+    .right_h1 {
+      margin-right: 2%;
+      font-size: 400%;
+    }
+
+    .right_p {
+      margin-left: 50%;
+      margin-right: 2%;
+      text-align: justify;
+      font-size: 200%;
+    }
+
+
+/*product.html*/
+  #ticket_table{
+    border-collapse: collapse;
+    margin-bottom: 2%;
+  }
+  #ticket_table, #ticket_table th, #ticket_table td {
+    border: 2px solid black;
+  }
+
+  #ticket_table th, #ticket_table td{
+    text-align: center;
+    padding: 1% 0 1% 0;
+    font-size: 120%;
+  }
+
+  #ticket_table th {
+    background: #2f4e6F;
+    color: white;
+  }
+
+  #ticket_table td {
+    background: #98b1c4;
+    color: white;
+  }
+
+  .column {
+    float: left;
+  }
+                              /*Devide the width into 2 columns*/
+  .left {
+    width: 75%;
+  }
+
+  .right{
+    float: right;
+    width: 25%;
+  }
+
+  .right aside{
+    text-align: center;                   /*Adjust aside (right column)*/
+    border: 5px double #68a0b0;
+    margin-left: 3%;
+  }
+
+  .right aside p {
+    text-align: justify;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .right aside img {
+    width: 90%;
+    margin: 2%;
+  }
+
+  .no_column{
+    clear: both;                /*clear float for elements below columns*/
+  }
+
+  .film_block{
+    width: 100%;                    /*Adjust the details of each movie*/
+  }
+
+  .poster_image {
+    background: white;
+    padding: 1em;
+    border: solid black;
+    border-width: 1em;
+    border-radius: 0.5em;
+  }
+
+  .caption_block{
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: left;
+    background: #314455;
+    border-radius: 5px;
+    border-left: solid #b23850;
+    border-right: solid #b23850;
+    border-width: 1em;
+    padding: 1%;
+    width: 70%;
+  }
+
+  .eng_caption{
+    font-family:  'Agency FB', Consolas, Bahnschrif, Bahnschrift, Arial, sans-serif;
+    line-height: 0;
+    font-size: 200%;
+    font-weight: bold;
+    padding-left: 2%;
+  }
+
+  .vi_caption{
+    font-family: Bahnschrift, Arial, sans-serif;
+    line-height: 1em;
+    font-size: 110%;
+    padding-left: 2%;
+  }
+
+  .film_intro {
+    vertical-align: top;
+  }
+
+  .film_intro ul{
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(55, 55, 55, 0.9);
+    border-radius: 10px;
+  }
+
+  .film_intro ul li{
+    line-height: 175%;
+  }
+
+  .trailer, .book{
+    font-size: 1em;
+    padding-top: 2%;
+    margin-left: 2%;                        /*Style 2 buttons - TRAILER and BOOK*/
+    margin-right: 2%;
+    display: inline-block;
+  }
+
+  .trailer a, .book a{
+    font-family: 'arial black',arial, sans-serif;
+    color: white;
+    background: #aa0000;
+    padding: 10px 20px 10px 20px;
+    border-radius: 2px;
+  }
+
+  /*Style the big headline of each part (NOW SHOWING, COMING SOON, PROMOTIONS, TICKET PRICE)*/
+  .headline{
+    display: inline-block;
+    color: lightgray;
+    padding: 10px 30px 10px 30px;
+    background: #291b20;
+    border-bottom: 8px solid #ffdc73;
+    border-top: 8px solid #ffdc73;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 2em;
+    clear: both;
+  }
+
+  .bottom_footer {
+	  position: sticky;
+	  top: 100%;
+  }
+
+  /*Style the modal box*/
+  #modal {                /*Make the light gray back ground*/
+      z-index: 2;
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background: rgba(0,0,0,0.4);
+    }
+
+    #modal_content {
+      width: 55%;
+      height: auto;
+      margin: auto;
+      margin-top: 7%;
+      background: white;
+    }
+
+    #p_modal_content {
+      width: 98%;
+      height: auto;
+      margin: auto;
+      padding-top: 10px;
+    }
+
+
+    #p_modal_content img {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    #close_button {             /*Style the close button*/
+      margin-right: 2%;
+      font-size: 300%;
+      font-weight: bold;
+      float: right;
+      display: inline;
+      color: white;
+    }
+
+    #close_button:hover{
+      cursor: pointer;
+      color: lightgray;
+    }
+
+/*booking.html*/
+
+/*making dropdown menu*/
+.dropdown {
+  margin-top: 2%;
+  margin-left: 2%;
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown_button{
+  color: white;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  font-size: 150%;
+  background: #aa0000;
+  padding: 1em;
+  border: none;
+  display: block;
+}
+
+.dropdown_content{
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown_content a{
+  color: black;
+  padding: 0.5% 1% 0.5% 1%;
+  display: block;
+}
+
+.dropdown:hover {
+  display: block;
+}
+
+.dropdown:hover .dropdown_content{
+  background:  #f1f1f1;
+  display: block;
+  width: 100%;
+}
+
+.dropdown:hover .dropdown_content a{
+  display: block;
+}
+
+.dropdown_content a:hover{
+  background: black;
+  color: white;
+}
+
+
+
+
+/*about.html*/
+
+/*Styling the dl part*/
+dt{
+  float: left;
+  text-align: right;
+  width: 20%;
+  padding: 0.5% 0 0.5% 0;
+  font-weight: bold;
+}
+
+dd{
+  text-align: left;
+  margin-left: 22%;
+  padding: 0.5% 0 0.5% 0;
+
+}
+
+dt::after {
+  content: '  :'
+}
+
+/*Styling the photo*/
+#photo_of_me{
+  float: right;
+}
+
+#photo_of_me img {
+  border: double black;
+  border-width: 0.4em;
+  width: 100%;
+}
+
+/*Styling the timetable in about.html*/
+#timetable, #timetable th,#timetable td{
+  border: 1px solid black;
+}
+
+#timetable th,#timetable td{
+  text-align: center;
+  background: #2a363b;
+  color: white;
+  padding: 0.5% 0 0.5% 0;
+}
+
+#timetable th:hover,#timetable td:hover{
+  background: white;
+  color: black;
+}
+
+.timetable{
+  clear: both;
+}
+
+/*product.html*/
+
+  /*<section class="coming_soon">*/
+  .coming_soon{
+    float: left;
+    display: inline-block;
+    width: 20%;
+  }
+
+  /*Promotion section*/
+  #promotion_list{                   /*id="promotion_list"*/
+    list-style-position: inside;      /*This will make the ordered list's numbers included in the box*/
+    margin: 0;
+  }
+
+  /*below codes contributes to dropdown effect of this part*/
+  .promotion_title{
+    background: #aa0000;
+    padding: 0.5% 0.5% 0.5%;
+    margin: 0.5% 0 0.5% 0;
+    color: white;
+    font-size: 120%;
+    position: relative;
+  }
+
+  .promotion_detail{
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .promotion_title:hover{
+    padding: 0.5% 0 0 0;
+  }
+
+  .promotion_title:hover .promotion_detail {
+    display: block;
+    width: 100%;
+    background: white;
+    color: black;
+    margin-top: 0;
+    padding: 1% 0 1% 0;
+    font-size: 90%;
+  }
+
+  /*clear float for the footer of product.html */
+  #product_footer{
+    clear: both;
+    width: 100%;
+  }
+
+
+/*payment.html*/
+#remove_billing_add {
+  display: inline-block;
+}
+
+
+/*fix_order.php*/
+.fix_msg {
+  font-size: 80%;
+  font-style: italic;
+  background: rgba(255,192,203,0.4);
+  padding: 0.5%;
+  color: #f5f5f5;
+}
+
+/*login.php*/
+#manage_login_username, #manage_login_password {
+	width: 20%;
+	color: black;
+	border: 1px solid black;
+	margin-left: 2%;
+}
+
+/*member_login*/
+#member_login_username, #member_login_password {
+	width: 20%;
+	color: black;
+	border: 1px solid black;
+	margin-left: 2%;
+}
+
+/*display_by_name.php*/
+#search_orders_by_name {
+	width: 20%;
+	color: black;
+	border: 1px solid black;
+ }
+
+/*Make responsive design*/
+@media screen and (max-width: 600px) {
+  header img{
+    width: 80%;
+  }
+
+  .navigation_bar{
+    position: static;
+  }
+
+  .navigation_bar ul li {
+    width: 50%;
+    display: inline-block;
+    font-size: 80%;
+  }
+
+  .right{
+    display: none;
+  }
+
+  .left{
+    width: 100%;
+  }
+
+  .poster_image{
+    width: 50%;
+  }
+  .poster{
+    width: 40%;
+  }
+  .caption_block, .film_intro{
+    width: 60%;
+    height: 80%;
+  }
+  .eng_caption, .vi_caption{
+    font-size: 80%;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+  .eng_caption{
+    word-wrap: break-word;
+  }
+  .film_intro ul{
+    display: none;
+  }
+
+  .coming_soon{
+    float: none;
+    display: block;
+  }
+
+  .modal {
+    display: none;
+  }
+}
